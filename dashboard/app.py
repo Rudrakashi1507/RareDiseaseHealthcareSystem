@@ -31,7 +31,7 @@ st.sidebar.header("🔎 Filters")
 try:
     filter_response = requests.get(
         f"{API_URL}/analytics",
-        timeout=10
+        timeout=60
     )
 
     filter_data = filter_response.json()
